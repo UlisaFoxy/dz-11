@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Family regression test">
+
+    <test name="Family regression">
+        <packages>
+            <package name="familytest"/>
+        </packages>
+
+    </test>
+
+</suite>
