@@ -8,12 +8,14 @@ public abstract class Person {
     private String partnerLastName;
     private String maidenName;
 
-    public Person(String firstName, String lastName, Integer age, String partner, String profession) {
+    public Person(String firstName, String lastName, Integer age, String partner, String profession,String partnerLastName, String maidenName) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
         this.partner= partner;
         this.profession = profession;
+        this.partnerLastName = partnerLastName;
+        this.maidenName = maidenName;
     }
 
     public String getFirstName() {
@@ -46,7 +48,6 @@ public abstract class Person {
         this.partner = partner;
     }
 
-
     public String getProfession() {
         return profession;
     }
@@ -55,24 +56,13 @@ public abstract class Person {
         this.profession = profession;
     }
 
-
     public String getPartnerLastName() {
-        return null;
+        return partnerLastName;
     }
 
-
-
-    public String getMaidenName()  {
-        return null;
-    };
-
-
-//    public static void registerPartnership(Person woman) {
-//        if (woman.getPartner() == null) {
-//            woman.setLastName(woman.getPartnerLastName());
-//        }
-//    }
-
+    public String getMaidenName() {
+        return maidenName;
+    }
 
     public static void deregisterPartnership(Woman woman, boolean shouldReturnToMaidenName) {
         if (woman.getPartner() != null) {
@@ -95,8 +85,6 @@ public abstract class Person {
     public void setMaidenName(String maidenName) {
         this.maidenName = maidenName;
     }
-//    public void getPartnerLastName(String partnerLastName) {
-//        this.partnerLastName = partnerLastName;
-//    }
+
 }
 
