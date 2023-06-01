@@ -6,24 +6,26 @@ public class Woman extends Person{
     public Woman (String firstName,String lastName,Integer age,String partner,String profession,String partnerLastName,String maidenName){
         super(firstName,lastName,age,partner,profession);
     }
-    @Override
+
     public String getPartnerLastName() {
         return partnerLastName;
     }
+
+
     @Override
     public String getMaidenName() {
         return maidenName;
     }
 
 
-    public String setMaidenName(String maidenName) {
+    public void setMaidenName(String maidenName) {
         this.maidenName = maidenName;
-        return maidenName;
+
     }
 
-    public String setPartnerLastName(String partnerLastName) {
+    public void setPartnerLastName(String partnerLastName) {
         this.partnerLastName = partnerLastName;
-        return partnerLastName;
+
     }
 
     @Override

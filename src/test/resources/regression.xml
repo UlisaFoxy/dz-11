@@ -2,9 +2,14 @@
 <suite name="Family regression test">
 
     <test name="Family regression">
-        <packages>
-            <package name="familytest"/>
-        </packages>
+        <classes>
+            <class name="familytest.PersonsTest"/> <!-- only getters and setters-->
+            <class name="familytest.RelationshipTests"/> <!-- all tests-->
+        </classes>
+<!--        <packages>-->
+<!--            <package name="familytest"/>-->
+<!--        </packages>-->
+
 
     </test>
 

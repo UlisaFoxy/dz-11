@@ -1,64 +1,120 @@
+//only getters and setters
 package familytest;
-
-import com.rd.family.Man;
 import com.rd.family.Person;
 import com.rd.family.Woman;
+import com.rd.family.Man;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 public class PersonsTest {
-    private Woman woman;
-    private Man Man;
+    private Person woman;
+    private Person man;
+
+
     @BeforeMethod
     public void creatingPerson(){
-        Man man = new Man ("Alex", "Smith", 65, "Andrea", "carpenter" );
-        Woman woman = new Woman("Andrea", "Larson", 40, "Alex", "doctor", "Smith", "Larson");
+        man = new Man ("Alex", "Smith", 65, "Andrea", "carpenter" );
+        woman = new Woman("Andrea", "Larson", 40, "Alex", "doctor", "Smith", "Larson");
     }
     @Test
+    public void testGetWomanFirstName() {
+        woman.setFirstName("Andrea");
+        Assert.assertEquals("Andrea", woman.getFirstName());
+    }
+
+    @Test
+    public void testGetManFirstName() {
+        man.setFirstName("Alex");
+        Assert.assertEquals("Alex", man.getFirstName());
+    }
+
+    @Test
+    public void testSetWomanFirstName() {
+        woman.setFirstName("Andrea");
+        Assert.assertEquals("Andrea", woman.getFirstName());
+    }
+    @Test
+    public void testSetManFirstName() {
+        man.setFirstName("Alex");
+        Assert.assertEquals("Alex", man.getFirstName());
+    }
+
+    @Test
+    public void testGetWomanLastName() {
+        woman.setLastName("Larson");
+        Assert.assertEquals("Larson", woman.getLastName());
+    }
+
+    @Test
+    public void testGetManLastName() {
+        man.setLastName("Smith");
+        Assert.assertEquals("Smith", man.getLastName());
+    }
+
+    @Test
+    public void testSetWomanLastName() {
+        woman.setLastName("Larson");
+        Assert.assertEquals("Larson", woman.getLastName());
+    }
+
+    @Test
+    public void testSetManLastName() {
+        man.setLastName("Smith");
+        Assert.assertEquals("Smith", man.getLastName());
+    }
+
+    @Test
+    public void testGetWomanAge() {
+        woman.setAge(40);
+        Assert.assertEquals(40, woman.getAge());
+    }
+
+    @Test
+    public void testGetManAge() {
+        woman.setAge(65);
+        Assert.assertEquals(65, man.getAge());
+    }
+
+    @Test
+    public void testSetWomanAge() {
+        woman.setAge(40);
+        Assert.assertEquals(40, woman.getAge());
+    }
+    @Test
+    public void testSetManAge() {
+        man.setAge(65);
+        Assert.assertEquals(65, man.getAge());
+    }
+
+    @Test
+    public void testSetPartnerLastName(){
+        woman.setPartnerLastName("Smith");
+        Assert.assertEquals(woman.getPartnerLastName(),"Smith","Woman didn't get married");
+
+    }
+
+    @Test
     public void testGetPartnerLastName() {
+        woman.getPartnerLastName();
         Assert.assertEquals( woman.getPartnerLastName(),"Smith", "Woman doesn't have partner");
 
     }
 
     @Test
     public void testGetMaidenName(){
-        Woman woman = new Woman("Andrea", "Larson", 40, "Alex", "doctor", "Smith", "Larson");
-
+        woman.getMaidenName();
         Assert.assertEquals(woman.getMaidenName(),"Larson","Woman got married");
 
     }
 
     @Test
-    public void testSetPartnerLasName(){
-        Woman woman = new Woman("Andrea", "Larson", 40, "Alex", "doctor", "Smith", "Larson");
-        String partnerLastName = "Smith";
-        Assert.assertEquals(woman.setPartnerLasName(),"Larson","Woman didn't get married");
-
-    }
-
-
-    @Test
     public void testSetMaidenName(){
-        Woman woman = new Woman("Andrea", "Larson", 40, "Alex", "doctor", "Smith", "Larson");
-        String maidenName = "Larson";
-
-        Assert.assertEquals(woman.setMaidenName("Larson"),"Larson","Woman didn't get married");
+        woman.setMaidenName("Larson");
+        Assert.assertEquals(woman.getMaidenName(),"Larson","Woman didn't get married");
 
     }
 
-    @Test
-    public void testIsRetiredWoman() {
-        Woman woman = new Woman("Andrea", "Larson", 40, "Alex", "doctor", "Smith", "Larson");
 
-        Assert.assertFalse(woman.isRetired(), "Woman still young");
-
-    }
-
-    @Test
-    public void testIsRetiredMan() {
-        Man man = new Man ("Alex", "Smith", 65, "Andrea", "carpenter" );
-
-        Assert.assertTrue(man.isRetired(), "Man is retired");
-    }
 }

@@ -5,6 +5,8 @@ public abstract class Person {
     private Integer age;
     private String partner;
     private String profession;
+    private String partnerLastName;
+    private String maidenName;
 
     public Person(String firstName, String lastName, Integer age, String partner, String profession) {
         this.firstName = firstName;
@@ -58,6 +60,8 @@ public abstract class Person {
         return null;
     }
 
+
+
     public String getMaidenName()  {
         return null;
     };
@@ -84,5 +88,15 @@ public abstract class Person {
     public abstract boolean isRetired();
 
 
+    public void setPartnerLastName(String partnerLastName) {
+        this.partnerLastName = partnerLastName;
+    }
+
+    public void setMaidenName(String maidenName) {
+        this.maidenName = maidenName;
+    }
+//    public void getPartnerLastName(String partnerLastName) {
+//        this.partnerLastName = partnerLastName;
+//    }
 }
 
