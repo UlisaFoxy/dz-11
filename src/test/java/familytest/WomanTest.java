@@ -56,6 +56,5 @@ public class WomanTest {
         Assert.assertFalse(woman.isRetired(), "Woman still young");
     }
 
-
 }
 

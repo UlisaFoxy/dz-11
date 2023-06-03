@@ -1,21 +1,18 @@
 package com.rd.family;
+
 public abstract class Person {
     private String firstName;
     private String lastName;
     private Integer age;
     private String partner;
     private String profession;
-    private String partnerLastName;
-    private String maidenName;
 
-    public Person(String firstName, String lastName, Integer age, String partner, String profession,String partnerLastName, String maidenName) {
+    public Person(String firstName, String lastName, Integer age, String partner, String profession) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
         this.partner= partner;
         this.profession = profession;
-        this.partnerLastName = partnerLastName;
-        this.maidenName = maidenName;
     }
 
     public String getFirstName() {
@@ -33,10 +30,12 @@ public abstract class Person {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-    public int getAge() {
+
+    public Integer getAge() {
         return age;
     }
-    public void setAge(int age) {
+
+    public void setAge(Integer age) {
         this.age = age;
     }
 
@@ -56,13 +55,16 @@ public abstract class Person {
         this.profession = profession;
     }
 
-    public String getPartnerLastName() {
-        return partnerLastName;
+    public static void registerPartnership(Person woman) {
+        if (woman.getPartner() == null) {
+            woman.setLastName(woman.getPartnerLastName());
+        }
     }
 
-    public String getMaidenName() {
-        return maidenName;
-    }
+    public abstract String getPartnerLastName();
+
+    public abstract String getMaidenName();
+
 
     public static void deregisterPartnership(Woman woman, boolean shouldReturnToMaidenName) {
         if (woman.getPartner() != null) {
@@ -77,14 +79,9 @@ public abstract class Person {
 
     public abstract boolean isRetired();
 
-
-    public void setPartnerLastName(String partnerLastName) {
-        this.partnerLastName = partnerLastName;
-    }
-
     public void setMaidenName(String maidenName) {
-        this.maidenName = maidenName;
     }
 
+    public void setPartnerLastName(String smith) {
+    }
 }
-

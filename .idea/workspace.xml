@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c307568-bef4-4215-ac92-f8bc985d133c" name="Changes" comment="Homework JUnit/TestNG - part3">
-      <change afterPath="$PROJECT_DIR$/src/test/java/familytest/WomanTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rd/family/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rd/family/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rd/family/Man.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rd/family/Man.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rd/family/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rd/family/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rd/family/Woman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rd/family/Woman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/familytest/PersonsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/familytest/RelationshipTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/regression.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/regression.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/familytest/ManTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/familytest/ManTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/familytest/PersonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/familytest/PersonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/familytest/WomanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/familytest/WomanTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,34 +59,7 @@
       <recent name="D:\Studying\QA Automation\Homework\dz-11\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.WomanTest">
-    <configuration name="D:/Studying/QA Automation/Homework/dz-11/src/test/resources/regression.xml (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="dz-11" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/regression.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ManTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="dz-11" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="familytest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="familytest" />
-      <option name="MAIN_CLASS_NAME" value="familytest.ManTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.PersonTest.testGetPartnerLastName">
     <configuration name="PersonTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="dz-11" />
       <extension name="coverage">
@@ -105,7 +77,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RelationshipTests.testRegisterPartnership" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PersonTest.testGetPartnerLastName" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="dz-11" />
       <extension name="coverage">
         <pattern>
@@ -114,8 +86,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="familytest" />
-      <option name="MAIN_CLASS_NAME" value="familytest.RelationshipTests" />
-      <option name="METHOD_NAME" value="testRegisterPartnership" />
+      <option name="MAIN_CLASS_NAME" value="familytest.PersonTest" />
+      <option name="METHOD_NAME" value="testGetPartnerLastName" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -140,13 +112,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WomanTest.testGetMaidenName" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="dz-11" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="familytest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="familytest" />
+      <option name="MAIN_CLASS_NAME" value="familytest.WomanTest" />
+      <option name="METHOD_NAME" value="testGetMaidenName" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WomanTest.testSetMaidenName" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="dz-11" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="familytest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="familytest" />
+      <option name="MAIN_CLASS_NAME" value="familytest.WomanTest" />
+      <option name="METHOD_NAME" value="testSetMaidenName" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.PersonTest.testGetPartnerLastName" />
         <item itemvalue="TestNG.WomanTest" />
+        <item itemvalue="TestNG.WomanTest.testSetMaidenName" />
+        <item itemvalue="TestNG.WomanTest.testGetMaidenName" />
         <item itemvalue="TestNG.PersonTest" />
-        <item itemvalue="TestNG.ManTest" />
-        <item itemvalue="TestNG.D:/Studying/QA Automation/Homework/dz-11/src/test/resources/regression.xml (1)" />
-        <item itemvalue="TestNG.RelationshipTests.testRegisterPartnership" />
       </list>
     </recent_temporary>
   </component>
@@ -166,12 +174,20 @@
       <option name="project" value="LOCAL" />
       <updated>1685388591224</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Homework JUnit/TestNG - part3">
+      <created>1685655886530</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685655886531</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Homework JUnit/TestNG" />
-    <option name="LAST_COMMIT_MESSAGE" value="Homework JUnit/TestNG" />
+    <MESSAGE value="Homework JUnit/TestNG - part3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Homework JUnit/TestNG - part3" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

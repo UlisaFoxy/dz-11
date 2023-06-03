@@ -8,7 +8,7 @@ public class ManTest {
     private Person man;
     @BeforeMethod
     public void creatingMan(){
-        man = new Man ("Alex", "Smith", 65, "Andrea", "carpenter", "Larson",null);
+        man = new Man ("Alex", "Smith", 65, "Andrea", "carpenter");
     }
     @Test(groups = {"AllTests"})
     public void testIsRetiredMan() {

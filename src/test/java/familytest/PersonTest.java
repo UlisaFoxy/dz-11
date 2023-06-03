@@ -1,33 +1,37 @@
 package familytest;
 import com.rd.family.Person;
 import com.rd.family.Woman;
+import com.rd.family.Man;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 public class PersonTest {
-    private Person person;
+    private Woman woman;
+    private Man man;
     @BeforeMethod
     public void creatingPerson(){
-        person = new Woman("Andrea", "Larson", 40, "Alex", "doctor", "Smith", "Larson");
+
+        woman = new Woman("Andrea", "Larson", 40, "Alex", "doctor", "Smith", "Larson");
+        man = new Man ("Alex", "Smith", 65, "Andrea", "carpenter");
     }
     @Test(groups = {"AllTests","GettersSetters"})
     public void testGetPersonFirstName() {
-        person.setFirstName("Alex");
-        Assert.assertEquals("Alex", person.getFirstName());
+        woman.setFirstName("Andrea");
+        Assert.assertEquals("Andrea", woman.getFirstName());
     }
     @Test(groups = {"AllTests","GettersSetters"})
     public void testGetManLastName() {
-        person.setLastName("Smith");
-        Assert.assertEquals("Smith", person.getLastName());
+        man.setLastName("Smith");
+        Assert.assertEquals("Smith", man.getLastName());
     }
     @Test(groups = {"AllTests","GettersSetters"})
     public void testSetManAge() {
-        person.setAge(65);
-        Assert.assertEquals(65, person.getAge());
+        man.setAge(65);
+        Assert.assertEquals(65, man.getAge());
     }
     @Test(groups = {"AllTests","GettersSetters"})
     public void testGetPartnerLastName() {
-        person.getPartnerLastName();
-        Assert.assertEquals( person.getPartnerLastName(),"Smith", "This is a man's partner");
+        woman.getPartnerLastName();
+        Assert.assertEquals( woman.getPartnerLastName(),"Smith", "This is a man's partner");
     }
 }
