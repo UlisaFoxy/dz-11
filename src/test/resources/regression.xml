@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Family regression test">
+<groups>
+    <run>
+        <include name="AllTests"/>
+        <include name="GettersSetters"/>
+    </run>
+</groups>
+    <test name="Family regression">
+        <packages>
+            <package name="familytest"/>
+        </packages>
+
+    </test>
+
+</suite>
