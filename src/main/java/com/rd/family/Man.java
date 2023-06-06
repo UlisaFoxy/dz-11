@@ -4,15 +4,15 @@ public class Man extends Person{
         super(firstName,lastName,age,partner,profession);
     }
 
-    @Override
-    public String getPartnerLastName() {
-        return null;
-    }
-
-    @Override
-    public String getMaidenName() {
-        return null;
-    }
+//    @Override
+//    public String getPartnerLastName() {
+//        return null;
+//    }
+//
+//    @Override
+//    public String getMaidenName() {
+//        return null;
+//    }
 
     @Override
     public boolean isRetired() {

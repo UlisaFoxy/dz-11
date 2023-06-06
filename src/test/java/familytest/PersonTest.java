@@ -10,7 +10,6 @@ public class PersonTest {
     private Man man;
     @BeforeMethod
     public void creatingPerson(){
-
         woman = new Woman("Andrea", "Larson", 40, "Alex", "doctor", "Smith", "Larson");
         man = new Man ("Alex", "Smith", 65, "Andrea", "carpenter");
     }
@@ -29,9 +28,5 @@ public class PersonTest {
         man.setAge(65);
         Assert.assertEquals(65, man.getAge());
     }
-    @Test(groups = {"AllTests","GettersSetters"})
-    public void testGetPartnerLastName() {
-        woman.getPartnerLastName();
-        Assert.assertEquals( woman.getPartnerLastName(),"Smith", "This is a man's partner");
-    }
+
 }

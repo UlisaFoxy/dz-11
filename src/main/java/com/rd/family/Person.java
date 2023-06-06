@@ -31,7 +31,7 @@ public abstract class Person {
         this.lastName = lastName;
     }
 
-    public Integer getAge() {
+    public int getAge() {
         return age;
     }
 
@@ -55,33 +55,5 @@ public abstract class Person {
         this.profession = profession;
     }
 
-    public static void registerPartnership(Person woman) {
-        if (woman.getPartner() == null) {
-            woman.setLastName(woman.getPartnerLastName());
-        }
-    }
-
-    public abstract String getPartnerLastName();
-
-    public abstract String getMaidenName();
-
-
-    public static void deregisterPartnership(Woman woman, boolean shouldReturnToMaidenName) {
-        if (woman.getPartner() != null) {
-            woman.setPartner(null);
-
-            if (shouldReturnToMaidenName) {
-                woman.setLastName(woman.getMaidenName());
-            }
-        }
-
-    }
-
     public abstract boolean isRetired();
-
-    public void setMaidenName(String maidenName) {
-    }
-
-    public void setPartnerLastName(String smith) {
-    }
 }

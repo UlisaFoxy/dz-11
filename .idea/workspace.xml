@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c307568-bef4-4215-ac92-f8bc985d133c" name="Changes" comment="Homework JUnit/TestNG - part3">
+    <list default="true" id="7c307568-bef4-4215-ac92-f8bc985d133c" name="Changes" comment="Homework JUnit/TestNG - part4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rd/family/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rd/family/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rd/family/Man.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rd/family/Man.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rd/family/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rd/family/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rd/family/Woman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rd/family/Woman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/familytest/ManTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/familytest/ManTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/familytest/PersonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/familytest/PersonTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/familytest/WomanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/familytest/WomanTest.java" afterDir="false" />
     </list>
@@ -59,7 +57,24 @@
       <recent name="D:\Studying\QA Automation\Homework\dz-11\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.PersonTest.testGetPartnerLastName">
+  <component name="RunManager" selected="TestNG.ManTest">
+    <configuration name="ManTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="dz-11" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="familytest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="familytest" />
+      <option name="MAIN_CLASS_NAME" value="familytest.ManTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PersonTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="dz-11" />
       <extension name="coverage">
@@ -71,24 +86,6 @@
       <option name="PACKAGE_NAME" value="familytest" />
       <option name="MAIN_CLASS_NAME" value="familytest.PersonTest" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PersonTest.testGetPartnerLastName" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="dz-11" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="familytest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="familytest" />
-      <option name="MAIN_CLASS_NAME" value="familytest.PersonTest" />
-      <option name="METHOD_NAME" value="testGetPartnerLastName" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -112,7 +109,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WomanTest.testGetMaidenName" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="WomanTest.testGetPartnerLastName" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="dz-11" />
       <extension name="coverage">
         <pattern>
@@ -122,7 +119,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="familytest" />
       <option name="MAIN_CLASS_NAME" value="familytest.WomanTest" />
-      <option name="METHOD_NAME" value="testGetMaidenName" />
+      <option name="METHOD_NAME" value="testGetPartnerLastName" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -130,7 +127,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WomanTest.testSetMaidenName" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="WomanTest.testSetPartnerLastName" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="dz-11" />
       <extension name="coverage">
         <pattern>
@@ -140,7 +137,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="familytest" />
       <option name="MAIN_CLASS_NAME" value="familytest.WomanTest" />
-      <option name="METHOD_NAME" value="testSetMaidenName" />
+      <option name="METHOD_NAME" value="testSetPartnerLastName" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -150,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.PersonTest.testGetPartnerLastName" />
-        <item itemvalue="TestNG.WomanTest" />
-        <item itemvalue="TestNG.WomanTest.testSetMaidenName" />
-        <item itemvalue="TestNG.WomanTest.testGetMaidenName" />
+        <item itemvalue="TestNG.ManTest" />
         <item itemvalue="TestNG.PersonTest" />
+        <item itemvalue="TestNG.WomanTest" />
+        <item itemvalue="TestNG.WomanTest.testGetPartnerLastName" />
+        <item itemvalue="TestNG.WomanTest.testSetPartnerLastName" />
       </list>
     </recent_temporary>
   </component>
@@ -181,13 +178,21 @@
       <option name="project" value="LOCAL" />
       <updated>1685655886531</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Homework JUnit/TestNG - part4">
+      <created>1685782539122</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685782539122</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Homework JUnit/TestNG" />
     <MESSAGE value="Homework JUnit/TestNG - part3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Homework JUnit/TestNG - part3" />
+    <MESSAGE value="Homework JUnit/TestNG - part4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Homework JUnit/TestNG - part4" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
